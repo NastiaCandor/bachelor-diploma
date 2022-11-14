@@ -1,0 +1,158 @@
+!------------------------------------ RFID ------------------------------------!
+!
+!
+defaults coordinate_system  &
+   default_coordinate_system = .AGV_Full_Vehicle_v1.ground
+!
+part create rigid_body name_and_position  &
+   part_name = .AGV_Full_Vehicle_v1.RFID  &
+   adams_id = 87  &
+   location = -4100.0, -2196.0, 0.0  &
+   orientation = 0.0d, 90.0d, 0.0d
+!
+defaults coordinate_system  &
+   default_coordinate_system = .AGV_Full_Vehicle_v1.RFID
+!
+! ****** Markers for current part ******
+!
+marker create  &
+   marker_name = .AGV_Full_Vehicle_v1.RFID.RFID10  &
+   adams_id = 920  &
+   location = 4198.5, 0.0, -2656.0  &
+   orientation = 180.0d, 90.0d, 180.0d
+!
+marker create  &
+   marker_name = .AGV_Full_Vehicle_v1.RFID.RFID9  &
+   adams_id = 921  &
+   location = 4100.0, 0.0, -2196.0  &
+   orientation = 180.0d, 90.0d, 180.0d
+!
+marker create  &
+   marker_name = .AGV_Full_Vehicle_v1.RFID.RFID1  &
+   adams_id = 922  &
+   location = 4100.0, 0.0, -2656.0  &
+   orientation = 180.0d, 90.0d, 180.0d
+!
+marker create  &
+   marker_name = .AGV_Full_Vehicle_v1.RFID.RFID3  &
+   adams_id = 923  &
+   location = 4100.0, 0.0, -2304.5  &
+   orientation = 180.0d, 90.0d, 180.0d
+!
+marker create  &
+   marker_name = .AGV_Full_Vehicle_v1.RFID.RFID4  &
+   adams_id = 14  &
+   location = 3646.0, 0.0, -2304.5  &
+   orientation = 180.0d, 90.0d, 180.0d
+!
+marker create  &
+   marker_name = .AGV_Full_Vehicle_v1.RFID.RFID2  &
+   adams_id = 15  &
+   location = 4100.0, 0.0, -2509.5  &
+   orientation = 180.0d, 90.0d, 180.0d
+!
+marker create  &
+   marker_name = .AGV_Full_Vehicle_v1.RFID.RFID5  &
+   adams_id = 16  &
+   location = 3646.0, 0.0, -2509.5  &
+   orientation = 180.0d, 90.0d, 180.0d
+!
+marker create  &
+   marker_name = .AGV_Full_Vehicle_v1.RFID.RFID6  &
+   adams_id = 17  &
+   location = 3646.0, 0.0, -2714.5  &
+   orientation = 180.0d, 90.0d, 180.0d
+!
+marker create  &
+   marker_name = .AGV_Full_Vehicle_v1.RFID.RFID7  &
+   adams_id = 18  &
+   location = 3822.0, 0.0, -2714.5  &
+   orientation = 180.0d, 90.0d, 180.0d
+!
+marker create  &
+   marker_name = .AGV_Full_Vehicle_v1.RFID.RFID8  &
+   adams_id = 19  &
+   location = 3822.0, 0.0, -2509.5  &
+   orientation = 180.0d, 90.0d, 180.0d
+!
+part create rigid_body mass_properties  &
+   part_name = .AGV_Full_Vehicle_v1.RFID  &
+   material_type = .AGV_Full_Vehicle_v1.steel
+!
+! ****** Graphics for current part ******
+!
+geometry create curve circle  &
+   circle_name = .AGV_Full_Vehicle_v1.RFID.CIRCLE_4987  &
+   adams_id = 4987  &
+   center_marker = .AGV_Full_Vehicle_v1.RFID.RFID10  &
+   radius = 20.0  &
+   segment_count = 20
+!
+geometry create curve circle  &
+   circle_name = .AGV_Full_Vehicle_v1.RFID.CIRCLE_5027  &
+   adams_id = 5027  &
+   center_marker = .AGV_Full_Vehicle_v1.RFID.RFID9  &
+   radius = 20.0  &
+   segment_count = 20
+!
+geometry create curve circle  &
+   circle_name = .AGV_Full_Vehicle_v1.RFID.CIRCLE_5028  &
+   adams_id = 5028  &
+   center_marker = .AGV_Full_Vehicle_v1.RFID.RFID1  &
+   radius = 20.0  &
+   segment_count = 20
+!
+geometry create curve circle  &
+   circle_name = .AGV_Full_Vehicle_v1.RFID.CIRCLE_5029  &
+   adams_id = 5029  &
+   center_marker = .AGV_Full_Vehicle_v1.RFID.RFID3  &
+   radius = 20.0  &
+   segment_count = 20
+!
+geometry create curve circle  &
+   circle_name = .AGV_Full_Vehicle_v1.RFID.CIRCLE_5030  &
+   adams_id = 5030  &
+   center_marker = .AGV_Full_Vehicle_v1.RFID.RFID4  &
+   radius = 20.0  &
+   segment_count = 20
+!
+geometry create curve circle  &
+   circle_name = .AGV_Full_Vehicle_v1.RFID.CIRCLE_5031  &
+   adams_id = 5031  &
+   center_marker = .AGV_Full_Vehicle_v1.RFID.RFID2  &
+   radius = 20.0  &
+   segment_count = 20
+!
+geometry create curve circle  &
+   circle_name = .AGV_Full_Vehicle_v1.RFID.CIRCLE_5032  &
+   adams_id = 5032  &
+   center_marker = .AGV_Full_Vehicle_v1.RFID.RFID5  &
+   radius = 20.0  &
+   segment_count = 20
+!
+geometry create curve circle  &
+   circle_name = .AGV_Full_Vehicle_v1.RFID.CIRCLE_5033  &
+   adams_id = 5033  &
+   center_marker = .AGV_Full_Vehicle_v1.RFID.RFID6  &
+   radius = 20.0  &
+   segment_count = 20
+!
+geometry create curve circle  &
+   circle_name = .AGV_Full_Vehicle_v1.RFID.CIRCLE_5034  &
+   adams_id = 5034  &
+   center_marker = .AGV_Full_Vehicle_v1.RFID.RFID7  &
+   radius = 20.0  &
+   segment_count = 20
+!
+geometry create curve circle  &
+   circle_name = .AGV_Full_Vehicle_v1.RFID.CIRCLE_5035  &
+   adams_id = 5035  &
+   center_marker = .AGV_Full_Vehicle_v1.RFID.RFID8  &
+   radius = 20.0  &
+   segment_count = 20
+!
+part attributes  &
+   part_name = .AGV_Full_Vehicle_v1.RFID  &
+   color = BLUE  &
+   name_visibility = off
+!

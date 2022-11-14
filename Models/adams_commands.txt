@@ -1,0 +1,22 @@
+undo backward
+undo backward
+undo begin
+   if cond=0
+      group modify group=.select_list obj=(eval(select_object(NONE, "", "")))
+   end
+   if cond=1
+      group object copy group=.select_list new_group=.copy_list
+      if cond=1
+  group modify group=.SELECT_LIST object=.AGV_Full_Vehicle_v1.Screw_3, .AGV_Full_Vehicle_v1.Engine_3, .AGV_Full_Vehicle_v1.Bearing_Bottom_Mount_Sliders_3, .AGV_Full_Vehicle_v1.Shaft_Bottom_3, .AGV_Full_Vehicle_v1.Bearing_Mount_Slider_Left_3, .AGV_Full_Vehicle_v1.Realistic_Platform_3, .AGV_Full_Vehicle_v1.Bearing_Mount_Slider_Right_3, .AGV_Full_Vehicle_v1.Scissors_Outter_3, .AGV_Full_Vehicle_v1.Scissors_Inner_3, .AGV_Full_Vehicle_v1.Shaft_Mounts_3, .AGV_Full_Vehicle_v1.AGV_Body_3, .AGV_Full_Vehicle_v1.FrontWheelFlange_3, .AGV_Full_Vehicle_v1.FrontWheelFrame_3, .AGV_Full_Vehicle_v1.FrontWheel_3, .AGV_Full_Vehicle_v1.RearWheelFlange_3, .AGV_Full_Vehicle_v1.RearWheelFrame_3, .AGV_Full_Vehicle_v1.RearWheel_3, .AGV_Full_Vehicle_v1.WheelLeftWheel_3, .AGV_Full_Vehicle_v1.WheelRightWheel_3, .AGV_Full_Vehicle_v1.RScissAndEngine_3, .AGV_Full_Vehicle_v1.RScissors_3, .AGV_Full_Vehicle_v1.RScissPlatf_3, .AGV_Full_Vehicle_v1.JOINT_2, .AGV_Full_Vehicle_v1.SBMountPlatf_3, .AGV_Full_Vehicle_v1.RScissAndShaftMount_3, .AGV_Full_Vehicle_v1.TBearingMountAndShaft_3, .AGV_Full_Vehicle_v1.FJShaftMount_3, .AGV_Full_Vehicle_v1.FJBottomSgaft_3, .AGV_Full_Vehicle_v1.FJEngine_3, .AGV_Full_Vehicle_v1.RJFrontCWheelFrame_3, .AGV_Full_Vehicle_v1.RJFrontFrameFlange_3, .AGV_Full_Vehicle_v1.FJFrontCWheel_3, .AGV_Full_Vehicle_v1.RJRearCWheelFrame_3, .AGV_Full_Vehicle_v1.RJRearFrameFlange_3, .AGV_Full_Vehicle_v1.FJRearCWheel_3, .AGV_Full_Vehicle_v1.RJWheelBodyRight_3, .AGV_Full_Vehicle_v1.RJWheelBodyLeft_3, .AGV_Full_Vehicle_v1.MOTION_43, .AGV_Full_Vehicle_v1.MRotLeft_3, .AGV_Full_Vehicle_v1.MRotRight_3, .AGV_Full_Vehicle_v1.CONTACT_9, .AGV_Full_Vehicle_v1.CONTACT_10, .AGV_Full_Vehicle_v1.CONTACT_11, .AGV_Full_Vehicle_v1.CONTACT_12, .AGV_Full_Vehicle_v1.SEVelRight_3, .AGV_Full_Vehicle_v1.SEVelLeft_3, .AGV_Full_Vehicle_v1.SESensorRFIDY_3, .AGV_Full_Vehicle_v1.SESensorRFIDX_3, .AGV_Full_Vehicle_v1.SESensorCRY_3, .AGV_Full_Vehicle_v1.SESensorCRX_3, .AGV_Full_Vehicle_v1.SESensorCLX_3, .AGV_Full_Vehicle_v1.SESensorCLY_3, .AGV_Full_Vehicle_v1.SESensorCY_3, .AGV_Full_Vehicle_v1.SESensorCX_3, .AGV_Full_Vehicle_v1.SEVelRight_4, .AGV_Full_Vehicle_v1.SEVelLeft_4, .AGV_Full_Vehicle_v1.SESensorRFIDY_4, .AGV_Full_Vehicle_v1.SESensorRFIDX_4, .AGV_Full_Vehicle_v1.SESensorCRY_4, .AGV_Full_Vehicle_v1.SESensorCRX_4, .AGV_Full_Vehicle_v1.SESensorCLX_4, .AGV_Full_Vehicle_v1.SESensorCLY_4, .AGV_Full_Vehicle_v1.SESensorCY_4, .AGV_Full_Vehicle_v1.SESensorCX_4, .AGV_Full_Vehicle_v1.SEActuator_3, .AGV_Full_Vehicle_v1.SEActuator_4, .AGV_Full_Vehicle_v1.SESensorLift_3, .AGV_Full_Vehicle_v1.MAnchorAngVel_L_3, .AGV_Full_Vehicle_v1.MAnchorAngVel_R_3, .AGV_Full_Vehicle_v1.MSensorRFIDY_3, .AGV_Full_Vehicle_v1.MSensorRFIDX_3, .AGV_Full_Vehicle_v1.MSensorPointCRY_3, .AGV_Full_Vehicle_v1.MSensorPointCRX_3, .AGV_Full_Vehicle_v1.MSensorPointCLY_3, .AGV_Full_Vehicle_v1.MSensorPointCLX_3, .AGV_Full_Vehicle_v1.MSensorPointCY_3, .AGV_Full_Vehicle_v1.MSensorPointCX_3, .AGV_Full_Vehicle_v1.MEA_PT2PT_252, .AGV_Full_Vehicle_v1.Displace_lift_3, .AGV_Full_Vehicle_v1.VMotorIzz_3, .AGV_Full_Vehicle_v1.Cstiff_3, .AGV_Full_Vehicle_v1.CForceExp_3, .AGV_Full_Vehicle_v1.Cdamp_3, .AGV_Full_Vehicle_v1.Cpendep_3, .AGV_Full_Vehicle_v1.CStatFricCoef_3, .AGV_Full_Vehicle_v1.CDynFricCoef_3, .AGV_Full_Vehicle_v1.CSticTrVel_3, .AGV_Full_Vehicle_v1.CFricTrVel_3, .AGV_Full_Vehicle_v1.VarMotorSpeed_3, .AGV_Full_Vehicle_v1.DV, .AGV_Full_Vehicle_v1.DV_3, .AGV_Full_Vehicle_v1.Dural_3, .AGV_Full_Vehicle_v1.Bearing_13, .AGV_Full_Vehicle_v1.Bearing_14, .AGV_Full_Vehicle_v1.Bearing_15
+  if con=(db_type(.copy_list.objects[1]) == "Model")
+    model display model=(eval(.copy_list.objects[1]))
+       if cond=(!db_exists(db_ancestor(db_default(.system_defaults,"model"),"model")))
+         mdi measure undisplay measure = .*
+         end
+  end
+  group delete group=.copy_list
+   end
+   end
+undo end
+move translation group=select_list csview=main.front &
+   c1=0.0  c2=(1000cm)  c3=0.0
