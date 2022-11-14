@@ -1,0 +1,1616 @@
+ADAMS/View model name: AGV_Full_Vehicle_v1
+!
+!-------------------------------- SYSTEM UNITS ---------------------------------
+!
+UNITS/
+, FORCE = NEWTON
+, MASS = KILOGRAM
+, LENGTH = CENTIMETER
+, TIME = SECOND
+!
+!----------------------------------- PARTS -------------------------------------
+!
+!----------------------------------- Ground ------------------------------------
+!
+!                            adams_view_name='ground'
+PART/1
+, GROUND
+!
+!                          adams_view_name='MARKER_233'
+MARKER/233
+, PART = 1
+, QP = -21.5, 1.032382261, 10
+, REULER = 90D, 90D, 0D
+!
+!                          adams_view_name='MARKER_235'
+MARKER/235
+, PART = 1
+, QP = -22.5, 1.032382261, 10
+, REULER = 90D, 90D, 0D
+!
+!                       adams_view_name='Planet_set_1_Ref'
+MARKER/236
+, PART = 1
+, QP = -22.5, 1.032382261, 10
+, REULER = 270D, 90D, 90D
+!
+!                          adams_view_name='Marker_14'
+MARKER/244
+, PART = 1
+, QP = -21.5, 1.032382261, 10
+, REULER = 90D, 90D, 0D
+!
+!                          adams_view_name='Marker_16'
+MARKER/246
+, PART = 1
+, QP = -22.5, 1.032382261, 10
+, REULER = 90D, 90D, 0D
+!
+!                   adams_view_name='Planet_set_1_ref_marker'
+MARKER/247
+, PART = 1
+, QP = -22.5, 1.032382261, 10
+, REULER = 270D, 90D, 90D
+!
+!                   adams_view_name='Planet_set_1_ref_marker1'
+MARKER/285
+, PART = 1
+, QP = 18.5, 1.032382261, 10
+, REULER = 270D, 90D, 90D
+!
+!                         adams_view_name='MARKER_2331'
+MARKER/288
+, PART = 1
+, QP = 19.5, 1.032382261, 10
+, REULER = 90D, 90D, 0D
+!
+!                         adams_view_name='MARKER_2351'
+MARKER/289
+, PART = 1
+, QP = 18.5, 1.032382261, 10
+, REULER = 90D, 90D, 0D
+!
+!                      adams_view_name='Planet_set_1_Ref1'
+MARKER/290
+, PART = 1
+, QP = 18.5, 1.032382261, 10
+, REULER = 270D, 90D, 90D
+!
+!                          adams_view_name='Marker_24'
+MARKER/291
+, PART = 1
+, QP = 19.5, 1.032382261, 10
+, REULER = 90D, 90D, 0D
+!
+!                          adams_view_name='Marker_26'
+MARKER/292
+, PART = 1
+, QP = 18.5, 1.032382261, 10
+, REULER = 90D, 90D, 0D
+!
+!                          adams_view_name='MARKER_865'
+MARKER/865
+, PART = 1
+, QP = -100, 100, 0
+!
+!                          adams_view_name='MARKER_866'
+MARKER/866
+, PART = 1
+, QP = -100, 100, 0
+!
+!                          adams_view_name='MARKER_867'
+MARKER/867
+, PART = 1
+, QP = -100, 100, 0
+!
+!                         adams_view_name='MARKER_1382'
+MARKER/1382
+, PART = 1
+, QP = 0.0115262072, 28.27902634, 17.13779709
+, REULER = 180D, 90D, 180D
+!
+!                           adams_view_name='MTable_2'
+MARKER/1407
+, PART = 1
+, QP = -30.99896674, -8.969009433, 30.64146315
+!
+!                         adams_view_name='MARKER_1433'
+MARKER/1433
+, PART = 1
+, QP = -1000, -300, -2
+!
+!------------------------------------ Part -------------------------------------
+!
+!                       adams_view_name='FrontWheelFrame'
+PART/4
+, QG = 0, 35.61238226, 7.5
+, REULER = 0D, 90D, 0D
+, MASS = 0.1091444827
+, CM = 14
+, IP = 0.5341792595, 0.4021015123, 0.3667869276
+!
+!                            adams_view_name='PSMAR'
+MARKER/8
+, PART = 4
+!
+!                           adams_view_name='MARKER_2'
+MARKER/12
+, PART = 4
+, QP = -1.7144, -4.82175, 1.60725
+!
+!                           adams_view_name='MARKER_3'
+MARKER/13
+, PART = 4
+, QP = 0, -1.2804425, 0
+, REULER = 180D, 90D, 180D
+!
+!                              adams_view_name='cm'
+MARKER/14
+, PART = 4
+, QP = -0.5556970761, -2.514451705, -3.560147625E-004
+, REULER = 129.4677882D, 90.01101218D, 0.0029631149D
+!
+!------------------------------------ Part -------------------------------------
+!
+!                          adams_view_name='FrontWheel'
+PART/5
+, QG = 0, 35.61238226, 7.5
+, REULER = 0D, 90D, 0D
+, MASS = 6.436865299E-005
+, CM = 16
+, IP = 2.265032967E-004, 1.498302755E-004, 1.496816715E-004
+!
+!                            adams_view_name='PSMAR'
+MARKER/9
+, PART = 5
+!
+!                           adams_view_name='MARKER_1'
+MARKER/15
+, PART = 5
+, QP = -1.7144, -4.82175, 1.60725
+!
+!                              adams_view_name='cm'
+MARKER/16
+, PART = 5
+, QP = -1.714409799, -4.821755098, -3.864317748E-005
+, REULER = 273.9806928D, 90.00003762D, 89.99999965D
+!
+!                         adams_view_name='MARKER_2335'
+MARKER/2335
+, PART = 5
+!
+!                            adams_view_name='SOLID3'
+GRAPHICS/33792
+, EXTERNAL
+, RM = 2335
+, FILE = Only_AGV_3.xmt_txt
+, ELEMENT = SOLID3
+, FACETING_TOLERANCE = 300.0028
+!
+!------------------------------------ Part -------------------------------------
+!
+!                       adams_view_name='RearWheelFlange'
+PART/6
+, QG = 0, -44.38761774, 7.5
+, REULER = 0D, 90D, 0D
+, MASS = 0.2778328402
+, CM = 21
+, IP = 1.54894727, 0.8457846328, 0.7720803599
+!
+!                            adams_view_name='PSMAR'
+MARKER/19
+, PART = 6
+!
+!                           adams_view_name='MARKER_4'
+MARKER/20
+, PART = 6
+, QP = 0, -1.2804425, 0
+, REULER = 180D, 90D, 180D
+!
+!                              adams_view_name='cm'
+MARKER/21
+, PART = 6
+, QP = -6.549273099E-006, -0.5868781966, -6.287613016E-005
+, REULER = 90.00000238D, 90.07018421D, 3.789017804E-004D
+!
+!                          adams_view_name='MARKER_29'
+MARKER/29
+, PART = 6
+, REULER = 180D, 90D, 180D
+!
+!------------------------------------ Part -------------------------------------
+!
+!                        adams_view_name='RearWheelFrame'
+PART/7
+, QG = 0, -44.38761774, 7.5
+, REULER = 0D, 90D, 0D
+, MASS = 0.1091444827
+, CM = 25
+, IP = 0.5341792595, 0.4021015123, 0.3667869276
+!
+!                            adams_view_name='PSMAR'
+MARKER/22
+, PART = 7
+!
+!                           adams_view_name='MARKER_2'
+MARKER/23
+, PART = 7
+, QP = -1.7144, -4.82175, 1.60725
+!
+!                           adams_view_name='MARKER_3'
+MARKER/24
+, PART = 7
+, QP = 0, -1.2804425, 0
+, REULER = 180D, 90D, 180D
+!
+!                              adams_view_name='cm'
+MARKER/25
+, PART = 7
+, QP = -0.5556970761, -2.514451705, -3.560147625E-004
+, REULER = 129.4677882D, 90.01101218D, 0.0029631149D
+!
+!------------------------------------ Part -------------------------------------
+!
+!                          adams_view_name='RearWheel'
+PART/8
+, QG = 0, -44.38761774, 7.5
+, REULER = 0D, 90D, 0D
+, MASS = 6.436865299E-005
+, CM = 28
+, IP = 2.265032967E-004, 1.498302755E-004, 1.496816715E-004
+!
+!                            adams_view_name='PSMAR'
+MARKER/26
+, PART = 8
+!
+!                           adams_view_name='MARKER_1'
+MARKER/27
+, PART = 8
+, QP = -1.7144, -4.82175, 1.60725
+!
+!                              adams_view_name='cm'
+MARKER/28
+, PART = 8
+, QP = -1.714409799, -4.821755098, -3.864317748E-005
+, REULER = 273.9806928D, 90.00003762D, 89.99999965D
+!
+!                         adams_view_name='MARKER_2336'
+MARKER/2336
+, PART = 8
+!
+!                            adams_view_name='SOLID3'
+GRAPHICS/33795
+, EXTERNAL
+, RM = 2336
+, FILE = Only_AGV_3.xmt_txt
+, ELEMENT = SOLID3
+, FACETING_TOLERANCE = 300.0028
+!
+!------------------------------------ Part -------------------------------------
+!
+!                      adams_view_name='Realistic_Platform'
+PART/29
+, QG = -30.85003304, -21.44316604, 32.95
+, REULER = 270D, 0D, 0D
+, MASS = 16.97227514
+, CM = 2134
+, IP = 16164.3061, 9680.734482, 6690.603968
+!
+!                           adams_view_name='PSMAR_33'
+MARKER/2079
+, PART = 29
+!
+!                           adams_view_name='PSMAR_11'
+MARKER/2081
+, PART = 29
+!
+!                           adams_view_name='PSMAR_12'
+MARKER/2083
+, PART = 29
+!
+!                           adams_view_name='PSMAR_32'
+MARKER/2085
+, PART = 29
+!
+!                           adams_view_name='PSMAR_31'
+MARKER/2087
+, PART = 29
+!
+!                           adams_view_name='PSMAR_30'
+MARKER/2089
+, PART = 29
+!
+!                           adams_view_name='PSMAR_29'
+MARKER/2091
+, PART = 29
+!
+!                           adams_view_name='PSMAR_28'
+MARKER/2093
+, PART = 29
+!
+!                           adams_view_name='PSMAR_27'
+MARKER/2095
+, PART = 29
+!
+!                           adams_view_name='PSMAR_26'
+MARKER/2097
+, PART = 29
+!
+!                           adams_view_name='PSMAR_25'
+MARKER/2099
+, PART = 29
+!
+!                           adams_view_name='PSMAR_24'
+MARKER/2101
+, PART = 29
+!
+!                           adams_view_name='PSMAR_23'
+MARKER/2103
+, PART = 29
+!
+!                           adams_view_name='PSMAR_22'
+MARKER/2105
+, PART = 29
+!
+!                           adams_view_name='PSMAR_21'
+MARKER/2107
+, PART = 29
+!
+!                           adams_view_name='PSMAR_20'
+MARKER/2109
+, PART = 29
+!
+!                           adams_view_name='PSMAR_19'
+MARKER/2111
+, PART = 29
+!
+!                           adams_view_name='PSMAR_18'
+MARKER/2113
+, PART = 29
+!
+!                           adams_view_name='PSMAR_17'
+MARKER/2115
+, PART = 29
+!
+!                           adams_view_name='PSMAR_16'
+MARKER/2117
+, PART = 29
+!
+!                           adams_view_name='PSMAR_15'
+MARKER/2119
+, PART = 29
+!
+!                           adams_view_name='PSMAR_14'
+MARKER/2121
+, PART = 29
+!
+!                           adams_view_name='PSMAR_13'
+MARKER/2123
+, PART = 29
+!
+!                           adams_view_name='PSMAR_10'
+MARKER/2125
+, PART = 29
+!
+!                           adams_view_name='PSMAR_9'
+MARKER/2127
+, PART = 29
+!
+!                           adams_view_name='PSMAR_8'
+MARKER/2129
+, PART = 29
+!
+!                           adams_view_name='PSMAR_7'
+MARKER/2131
+, PART = 29
+!
+!                            adams_view_name='PSMAR'
+MARKER/2133
+, PART = 29
+!
+!                              adams_view_name='cm'
+MARKER/2134
+, PART = 29
+, QP = -22.51105731, 30.99997502, -2.830683736
+, REULER = 179.9999433D, 89.99999309D, 90.73364231D
+!
+!                           adams_view_name='PSMAR_6'
+MARKER/2135
+, PART = 29
+!
+!                           adams_view_name='PSMAR_5'
+MARKER/2137
+, PART = 29
+!
+!                           adams_view_name='PSMAR_4'
+MARKER/2139
+, PART = 29
+!
+!                           adams_view_name='PSMAR_3'
+MARKER/2141
+, PART = 29
+!
+!                           adams_view_name='PSMAR_2'
+MARKER/2143
+, PART = 29
+!
+!                           adams_view_name='PSMAR_1'
+MARKER/2145
+, PART = 29
+!
+!                         adams_view_name='MARKER_2147'
+MARKER/2147
+, PART = 29
+, QP = 1.662981438, 5.666630553, -6.495856345
+, REULER = 0D, 90D, 90D
+!
+!                         adams_view_name='MARKER_2177'
+MARKER/2177
+, PART = 29
+, QP = -48.60882708, 59.37660987, -6.563625806
+, REULER = 270D, 90D, 90D
+!
+!                     adams_view_name='MSensorLift_Platform'
+MARKER/2325
+, PART = 29
+, QP = -54.0055483, 61.27529619, -0.35
+, REULER = 90D, 0D, 0D
+!
+!------------------------------------ Part -------------------------------------
+!
+!                          adams_view_name='PlayGround'
+PART/89
+, QG = -800, 0, 0
+, MASS = 1.279364E+005
+, CM = 939
+, IP = 2.218630403E+011, 1.792176163E+011, 4.264550931E+010
+!
+!                           adams_view_name='MARKER_1'
+MARKER/938
+, PART = 89
+, QP = -200, -300, -2
+!
+!                              adams_view_name='cm'
+MARKER/939
+, PART = 89
+, QP = 800, 1750, -1
+, REULER = 180D, 90D, 90D
+!
+!                         adams_view_name='MARKER_1432'
+MARKER/1432
+, PART = 89
+, QP = -200, -300, -2
+!
+!                           adams_view_name='Flooring'
+GRAPHICS/33742
+, BOX
+, CORNER = 938
+, X = 2000
+, Y = 4100
+, Z = 2
+!
+!------------------------------------ Part -------------------------------------
+!
+!                           adams_view_name='AGV_Body'
+PART/108
+, QG = 0, -19.38761774, 10
+, MASS = 28.8335352
+, CM = 31
+, IP = 47508.15752, 34462.31435, 14413.75951
+!
+!                         adams_view_name='MRearCWheel'
+MARKER/2
+, PART = 108
+, QP = 0, -25, -2.5
+!
+!                          adams_view_name='MLeftWheel'
+MARKER/3
+, PART = 108
+, QP = -20.5, 20.42, 0
+!
+!                          adams_view_name='MARKER_5_1'
+MARKER/5
+, PART = 108
+, QP = -23.4, 20.42, 0
+, REULER = 270D, 90D, 180D
+!
+!                          adams_view_name='MARKER_6_1'
+MARKER/6
+, PART = 108
+, QP = -28.18234006, 20.4205095, -2.358698987E-004
+, REULER = 89.99853911D, 89.99932369D, 0D
+!
+!                          adams_view_name='MARKER_18'
+MARKER/18
+, PART = 108
+, QP = 0, 55, -2.5
+!
+!                          adams_view_name='MARKER_30'
+MARKER/30
+, PART = 108
+, QP = 0, -25, -2.5
+!
+!                              adams_view_name='cm'
+MARKER/31
+, PART = 108
+, QP = -0.0081605214, 21.52125218, 1.910213765
+, REULER = 180.287696D, 89.29517107D, 89.6852574D
+!
+!                            adams_view_name='PSMAR'
+MARKER/32
+, PART = 108
+, QP = 0, 20, 0
+!
+!                         adams_view_name='MFrontCWheel'
+MARKER/191
+, PART = 108
+, QP = 0, 55, -2.5
+!
+!                          adams_view_name='MARKER_13'
+MARKER/249
+, PART = 108
+, QP = -28.18234006, 20.4205095, -2.358698987E-004
+!
+!                           adams_view_name='MARKER_1'
+MARKER/270
+, PART = 108
+, QP = -17.25, 1.032382261, 10
+, REULER = 90D, 90D, 0D
+!
+!                           adams_view_name='MARKER_2'
+MARKER/272
+, PART = 108
+, QP = -17.25, 20.42, 0
+, REULER = 90D, 90D, 0D
+!
+!                           adams_view_name='MARKER_5'
+MARKER/385
+, PART = 108
+, QP = 17.6, 20.42, 0
+, REULER = 270D, 90D, 180D
+!
+!                           adams_view_name='MARKER_6'
+MARKER/386
+, PART = 108
+, QP = 12.81765994, 20.4205095, -2.358698987E-004
+, REULER = 89.99853911D, 89.99932369D, 0D
+!
+!                          adams_view_name='MARKER_1_1'
+MARKER/391
+, PART = 108
+, QP = 23.75, 1.032382261, 10
+, REULER = 90D, 90D, 0D
+!
+!                          adams_view_name='MARKER_2_1'
+MARKER/393
+, PART = 108
+, QP = 23.75, 20.42, 0
+, REULER = 90D, 90D, 0D
+!
+!                         adams_view_name='MRightWheel'
+MARKER/940
+, PART = 108
+, QP = 20.5, 20.42, 0
+!
+!                         adams_view_name='MARKER_1154'
+MARKER/1154
+, PART = 108
+, QP = -10.01859523, -0.6123822607, 10.82822965
+!
+!                         adams_view_name='MARKER_1234'
+MARKER/1234
+, PART = 108
+, QP = 0.266586255, 57.33082814, 7.553754164
+, REULER = 0D, 90D, 0D
+!
+!                         adams_view_name='MLeftWheel_2'
+MARKER/1426
+, PART = 108
+, QP = -19.5, 20.42, 0
+!
+!                        adams_view_name='MRightWheel_2'
+MARKER/1427
+, PART = 108
+, QP = 19.5, 20.42, 0
+!
+!                         adams_view_name='MARKER_1429'
+MARKER/1429
+, PART = 108
+, QP = 20.5, 20.42, 0
+, REULER = 270D, 90D, 180D
+!
+!                         adams_view_name='MARKER_1431'
+MARKER/1431
+, PART = 108
+, QP = -20.5, 20.42, 0
+, REULER = 90D, 90D, 0D
+!
+!                        adams_view_name='MSensorPointCR'
+MARKER/1434
+, PART = 108
+, QP = 5, 69.38761774, 0
+!
+!                        adams_view_name='MSensorPointCL'
+MARKER/1435
+, PART = 108
+, QP = -5, 69.38761774, 0
+!
+!                            adams_view_name='MRFID'
+MARKER/1436
+, PART = 108
+, QP = 0, 19.38761774, 0
+!
+!                        adams_view_name='MSensorPointC'
+MARKER/1437
+, PART = 108
+, QP = 0, 64.38761774, 0
+!
+!                         adams_view_name='MARKER_1642'
+MARKER/1642
+, PART = 108
+, QP = -29.70836907, 61.25916273, 7.547962005
+, REULER = 0D, 90D, 0D
+!
+!                         adams_view_name='MARKER_1713'
+MARKER/1713
+, PART = 108
+, QP = 29.79163093, 61.25916273, 7.547962005
+, REULER = 0D, 90D, 0D
+!
+!                           adams_view_name='MAR1872'
+MARKER/1872
+, PART = 108
+, QP = 26.1657, -23.07287183, 14.44947951
+, REULER = 0D, 180D, 0D
+!
+!                         adams_view_name='MARKER_1884'
+MARKER/1884
+, PART = 108
+, QP = -28.8343, -3.685254089, 4.449479505
+, REULER = 0D, 180D, 0D
+!
+!                      adams_view_name='MSensorLiftAGVBody'
+MARKER/2324
+, PART = 108
+, QP = 30.25956314, 51.95, 10.9
+!
+!                         adams_view_name='MARKER_2328'
+MARKER/2328
+, PART = 108
+, QP = 0.266586255, -3.669171857, 7.553754164
+, REULER = 90D, 90D, 0D
+!
+!                         adams_view_name='MARKER_1213'
+MARKER/2330
+, PART = 108
+, QP = 0.266586255, 57.33082814, 7.553754164
+, REULER = 0D, 90D, 0D
+!
+!                        adams_view_name='CYLINDER_24_2'
+GRAPHICS/75
+, CYLINDER
+, CM = 5
+, RANGLE = 360D
+, LENGTH = 0.5
+, RADIUS = 4
+!
+!                        adams_view_name='CYLINDER_25_2'
+GRAPHICS/76
+, CYLINDER
+, CM = 6
+, RANGLE = 360D
+, LENGTH = 4.5
+, RADIUS = 0.7
+!
+!                          adams_view_name='CYLINDER_4'
+GRAPHICS/77
+, CYLINDER
+, CM = 270
+, RANGLE = 360D
+, LENGTH = 3.7
+, RADIUS = 0.7
+!
+!                         adams_view_name='CYLINDER_13'
+GRAPHICS/78
+, CYLINDER
+, CM = 272
+, RANGLE = 360D
+, LENGTH = 1
+, RADIUS = 3
+!
+!                        adams_view_name='CYLINDER_24_1'
+GRAPHICS/770
+, CYLINDER
+, CM = 385
+, RANGLE = 360D
+, LENGTH = 0.5
+, RADIUS = 4
+!
+!                        adams_view_name='CYLINDER_25_1'
+GRAPHICS/771
+, CYLINDER
+, CM = 386
+, RANGLE = 360D
+, LENGTH = 4.5
+, RADIUS = 0.7
+!
+!                         adams_view_name='CYLINDER_4_1'
+GRAPHICS/772
+, CYLINDER
+, CM = 391
+, RANGLE = 360D
+, LENGTH = 3.7
+, RADIUS = 0.7
+!
+!                        adams_view_name='CYLINDER_13_1'
+GRAPHICS/773
+, CYLINDER
+, CM = 393
+, RANGLE = 360D
+, LENGTH = 1
+, RADIUS = 3
+!
+!                           adams_view_name='BOX_5066'
+!GRAPHICS/5066
+!, BOX
+!, CORNER = 1154
+!, X = 20
+!, Y = 40
+!, Z = 5
+!
+!                             adams_view_name='Left'
+GRAPHICS/13450
+, CYLINDER
+, CM = 1642
+, LENGTH = 48
+, RADIUS = 1
+!
+!                            adams_view_name='Right'
+GRAPHICS/16168
+, CYLINDER
+, CM = 1713
+, LENGTH = 48
+, RADIUS = 1
+!
+!                            adams_view_name='Engine'
+GRAPHICS/38553
+, CYLINDER
+, CM = 2330
+, RANGLE = 360D
+, LENGTH = 6
+, RADIUS = 2
+!
+!------------------------------------ Part -------------------------------------
+!
+!                       adams_view_name='FrontWheelFlange'
+PART/109
+, QG = 0, 35.61238226, 7.5
+, REULER = 0D, 90D, 0D
+, MASS = 0.2778328402
+, CM = 10
+, IP = 1.54894727, 0.8457846328, 0.7720803599
+!
+!                            adams_view_name='PSMAR'
+MARKER/7
+, PART = 109
+!
+!                              adams_view_name='cm'
+MARKER/10
+, PART = 109
+, QP = -6.549273099E-006, -0.5868781966, -6.287613016E-005
+, REULER = 90.00000238D, 90.07018421D, 3.789017804E-004D
+!
+!                           adams_view_name='MARKER_4'
+MARKER/11
+, PART = 109
+, QP = 0, -1.2804425, 0
+, REULER = 180D, 90D, 180D
+!
+!                          adams_view_name='MARKER_17'
+MARKER/17
+, PART = 109
+, REULER = 180D, 90D, 180D
+!
+!------------------------------------ Part -------------------------------------
+!
+!                        adams_view_name='WheelLeftWheel'
+PART/112
+, QG = -20.5, 1.032382261, 10
+, MASS = 6.783402055
+, CM = 98
+, IP = 420.6774474, 224.4516119, 224.4022691
+!
+!                           adams_view_name='PSMAR_1'
+MARKER/83
+, PART = 112
+!
+!                           adams_view_name='PSMAR_2'
+MARKER/84
+, PART = 112
+!
+!                              adams_view_name='cm'
+MARKER/98
+, PART = 112
+, QP = -0.0321158544, 7.683403115E-004, -3.652847372E-004
+, REULER = 180.0010982D, 25.23153025D, 179.9977016D
+!
+!                          adams_view_name='MARKER_99'
+MARKER/99
+, PART = 112
+, QP = 7.760888466, 0, -5.737439437
+, REULER = 180D, 180D, 0D
+!
+!                          adams_view_name='MARKER_100'
+MARKER/100
+, PART = 112
+, QP = 7.760888466, 4.8, 3.162560563
+, REULER = 180D, 180D, 0D
+!
+!                          adams_view_name='MARKER_101'
+MARKER/101
+, PART = 112
+, QP = 7.760888466, -4.7, -3.337439437
+, REULER = 180D, 180D, 0D
+!
+!                          adams_view_name='MARKER_102'
+MARKER/102
+, PART = 112
+, QP = 7.760888466, -4.8, 3.162560563
+, REULER = 180D, 180D, 0D
+!
+!                          adams_view_name='MARKER_103'
+MARKER/103
+, PART = 112
+, QP = 7.760888466, 4.5, -3.637439437
+, REULER = 180D, 180D, 0D
+!
+!                           adams_view_name='PSMAR_3'
+MARKER/104
+, PART = 112
+, QP = 7.760888466, 0, 5.762560563
+, REULER = 180D, 180D, 0D
+!
+!                            adams_view_name='PSMAR'
+MARKER/175
+, PART = 112
+, QP = 30, 0, 0
+!
+!                           adams_view_name='MARKER_3'
+MARKER/266
+, PART = 112
+, QP = -4.65, 0, 0
+, REULER = 270D, 90D, 180D
+!
+!                       adams_view_name='MAnchorAngVel_L'
+MARKER/676
+, PART = 112
+, QP = 0, 0, -10
+!
+!                         adams_view_name='MARKER_1430'
+MARKER/1430
+, PART = 112
+, REULER = 90D, 90D, 0D
+!
+!                         adams_view_name='MARKER_2337'
+MARKER/2337
+, PART = 112
+, QP = 30, 0, 0
+!
+!                            adams_view_name='Gland'
+GRAPHICS/65
+, CYLINDER
+, CM = 266
+, RANGLE = 360D
+, LENGTH = 0.1
+, RADIUS = 1.5
+!
+!                             adams_view_name='Tire'
+GRAPHICS/33804
+, EXTERNAL
+, RM = 2337
+, FILE = Only_AGV_3.xmt_txt
+, ELEMENT = Tire
+, FACETING_TOLERANCE = 300.0028
+!
+!------------------------------------ Part -------------------------------------
+!
+!                       adams_view_name='WheelRightWheel'
+PART/123
+, QG = 20.5, 1.032382261, 10
+, MASS = 6.783402055
+, CM = 371
+, IP = 420.6774474, 224.4516119, 224.4022691
+!
+!                           adams_view_name='PSMAR_1'
+MARKER/367
+, PART = 123
+!
+!                           adams_view_name='PSMAR_2'
+MARKER/368
+, PART = 123
+!
+!                           adams_view_name='MARKER_3'
+MARKER/369
+, PART = 123
+, QP = -4.65, 0, 0
+, REULER = 270D, 90D, 180D
+!
+!                              adams_view_name='cm'
+MARKER/371
+, PART = 123
+, QP = -0.0321158544, 7.683403115E-004, -3.652847372E-004
+, REULER = 180.0010982D, 25.23153025D, 179.9977016D
+!
+!                           adams_view_name='PSMAR_3'
+MARKER/372
+, PART = 123
+, QP = 7.760888466, 0, 5.762560563
+, REULER = 180D, 180D, 0D
+!
+!                          adams_view_name='MARKER_99'
+MARKER/373
+, PART = 123
+, QP = 7.760888466, 0, -5.737439437
+, REULER = 180D, 180D, 0D
+!
+!                          adams_view_name='MARKER_100'
+MARKER/374
+, PART = 123
+, QP = 7.760888466, 4.8, 3.162560563
+, REULER = 180D, 180D, 0D
+!
+!                          adams_view_name='MARKER_101'
+MARKER/375
+, PART = 123
+, QP = 7.760888466, -4.7, -3.337439437
+, REULER = 180D, 180D, 0D
+!
+!                          adams_view_name='MARKER_102'
+MARKER/376
+, PART = 123
+, QP = 7.760888466, -4.8, 3.162560563
+, REULER = 180D, 180D, 0D
+!
+!                          adams_view_name='MARKER_103'
+MARKER/377
+, PART = 123
+, QP = 7.760888466, 4.5, -3.637439437
+, REULER = 180D, 180D, 0D
+!
+!                            adams_view_name='PSMAR'
+MARKER/379
+, PART = 123
+, QP = 30, 0, 0
+!
+!                       adams_view_name='MAnchorAngVel_R'
+MARKER/675
+, PART = 123
+, QP = 0, 0, -10
+!
+!                         adams_view_name='MARKER_1428'
+MARKER/1428
+, PART = 123
+, REULER = 270D, 90D, 180D
+!
+!                         adams_view_name='MARKER_2338'
+MARKER/2338
+, PART = 123
+, QP = 30, 0, 0
+!
+!                            adams_view_name='Gland'
+GRAPHICS/760
+, CYLINDER
+, CM = 369
+, RANGLE = 360D
+, LENGTH = 0.1
+, RADIUS = 1.5
+!
+!                             adams_view_name='Tire'
+GRAPHICS/33813
+, EXTERNAL
+, RM = 2338
+, FILE = Only_AGV_3.xmt_txt
+, ELEMENT = Tire
+, FACETING_TOLERANCE = 300.0028
+!
+!------------------------------------ Part -------------------------------------
+!
+!                            adams_view_name='Screw'
+PART/131
+, QG = -0.0949399522, 9.664184061, 0.4159570724
+, MASS = 0.4947076429
+, CM = 1227
+, IP = 5.320502289, 5.005516784, 0.6202830358
+!
+!                         adams_view_name='MARKER_1212'
+MARKER/1212
+, PART = 131
+, QP = 0.3615262072, 22.27902634, 17.13779709
+, REULER = 180D, 90D, 180D
+!
+!                         adams_view_name='MARKER_1214'
+MARKER/1214
+, PART = 131
+, QP = 0.3615262072, 22.27902634, 17.13779709
+, REULER = 270D, 90D, 0D
+!
+!                         adams_view_name='MARKER_1215'
+MARKER/1215
+, PART = 131
+, QP = 0.3615262072, 18.27902634, 17.13779709
+, REULER = 270D, 90D, 0D
+!
+!                         adams_view_name='MARKER_1218'
+MARKER/1218
+, PART = 131
+, QP = 0.3615262072, 22.27902634, 17.13779709
+, REULER = 180D, 90D, 180D
+!
+!                              adams_view_name='cm'
+MARKER/1227
+, PART = 131
+, QP = 0.3615262072, 21.20069342, 17.13779709
+, REULER = 0D, 90D, 0D
+!
+!                         adams_view_name='MARKER_1233'
+MARKER/1233
+, PART = 131
+, QP = 0.3615262072, 28.27902634, 17.13779709
+, REULER = 0D, 90D, 0D
+!
+!                         adams_view_name='MARKER_2287'
+MARKER/2287
+, PART = 131
+, QP = 0.2570102446, 17.54735589, 17.17041712
+, REULER = 270D, 90D, 90D
+!
+!                         adams_view_name='MARKER_2293'
+MARKER/2293
+, PART = 131
+, QP = 0.2570102446, 17.54735589, 17.17041712
+, REULER = 90D, 90D, 270D
+!
+!                            adams_view_name='Screw'
+GRAPHICS/5156
+, CYLINDER
+, CM = 1212
+, RANGLE = 360D
+, LENGTH = 6
+, RADIUS = 1
+!
+!------------------------------------ Part -------------------------------------
+!
+!                       adams_view_name='Scissors_Outter'
+PART/193
+, QG = -22.7343, -10.81726254, 42.08970196
+, REULER = 180D, 80D, 180D
+, MASS = 4.5
+, CM = 1981
+, IP = 504.408353, 343.1555072, 163.7346248
+!
+!                           adams_view_name='MAR1877'
+MARKER/1877
+, PART = 193
+, QP = 68.72472048, -10.86178848, -23.89129151
+, REULER = 180D, 100D, 0D
+!
+!                              adams_view_name='cm'
+MARKER/1981
+, PART = 193
+, QP = 22.91236024, 22.06552431, 9.059205227
+, REULER = 89.94444441D, 89.48192326D, 359.9999986D
+!
+!                         adams_view_name='MARKER_2207'
+MARKER/2207
+, PART = 193
+, QP = 23.00088626, 25.44889382, 31.82480928
+, REULER = 0D, 80D, 0D
+!
+!                         adams_view_name='MARKER_2292'
+MARKER/2292
+, PART = 193
+, QP = 23.00088626, 22.03782005, -16.31420376
+, REULER = 90D, 90D, 350D
+!
+!                           adams_view_name='MForFi_O'
+MARKER/2295
+, PART = 193
+, QP = -2.499113745, 22.03782005, -16.31420376
+, REULER = 0D, 80D, 0D
+!
+!                         adams_view_name='MARKER_2298'
+MARKER/2298
+, PART = 193
+, QP = -2.499113745, 22.03782005, -16.31420376
+, REULER = 90D, 90D, 350D
+!
+!                         adams_view_name='MARKER_2329'
+MARKER/2329
+, PART = 193
+, QP = 23.00088625, 22.03782005, -16.31420376
+, REULER = 90D, 90D, 80D
+!
+!                         adams_view_name='MARKER_2331'
+MARKER/2331
+, PART = 193
+, QP = 51.26087683, 22.0604244, 34.67902337
+, REULER = 0D, 80D, 0D
+!
+!                         adams_view_name='MARKER_2334'
+MARKER/2334
+, PART = 193
+, QP = -2.499102492, 22.00504033, 9.128664842
+, REULER = 0D, 80D, 0D
+!
+!------------------------------------ Part -------------------------------------
+!
+!                  adams_view_name='Bearing_Mount_Slider_Left'
+PART/194
+, QG = -28.14563153, 26.68711753, 26.9
+, REULER = 270D, 0D, 0D
+, MASS = 0.0474597505
+, CM = 1982
+, IP = 0.1468555742, 0.0918810457, 0.0707287425
+!
+!                          adams_view_name='MAR1861_1'
+MARKER/1861
+, PART = 194
+, QP = -1.002965928, 56.56991019, 0
+, REULER = 180D, 0D, 0D
+!
+!                           adams_view_name='MAR1861'
+MARKER/1866
+, PART = 194
+!
+!                              adams_view_name='cm'
+MARKER/1982
+, PART = 194
+, QP = -0.5244224219, -0.1022981733, -0.5136258056
+, REULER = 88.28061006D, 175.0548115D, 358.4006873D
+!
+!                         adams_view_name='MARKER_2176'
+MARKER/2176
+, PART = 194
+, QP = -0.4785435057, 56.67220836, -0.5136258056
+, REULER = 270D, 90D, 90D
+!
+!                         adams_view_name='MARKER_2332'
+MARKER/2332
+, PART = 194
+, QP = -0.4785435057, 56.67220836, -0.5136258056
+, REULER = 90D, 0D, 0D
+!
+!------------------------------------ Part -------------------------------------
+!
+!                        adams_view_name='Scissors_Inner'
+PART/195
+, QG = -25.2343, 6.814205429, -1.472065886
+, REULER = 0D, 80D, 0D
+, MASS = 6
+, CM = 1983
+, IP = 434.8383309, 273.5854395, 163.7346291
+!
+!                           adams_view_name='MAR1876'
+MARKER/1876
+, PART = 195
+, QP = 76.26869275, 7.019843689, 19.20099579
+, REULER = 0D, 100D, 180D
+!
+!                         adams_view_name='MARKER_1931'
+MARKER/1931
+, PART = 195
+, QP = 8.975082E-004, 22.28250767, 8.823721922
+, REULER = 180D, 80D, 180D
+!
+!                         adams_view_name='MARKER_1962'
+MARKER/1962
+, PART = 195
+, QP = 0.0508975082, 22.30633291, 34.31513091
+, REULER = 180D, 80D, 180D
+!
+!                              adams_view_name='cm'
+MARKER/1983
+, PART = 195
+, QP = 25.43434637, 22.19060619, 8.864464951
+, REULER = 90.2877119D, 90.58977453D, 359.9999938D
+!
+!                         adams_view_name='MARKER_2146'
+MARKER/2146
+, PART = 195
+, QP = 0.0508975082, 22.30633291, 34.31513091
+, REULER = 270D, 90D, 170D
+!
+!                         adams_view_name='MARKER_2288'
+MARKER/2288
+, PART = 195
+, QP = 25.39637029, 22.31085952, -16.77798979
+, REULER = 270D, 90D, 170D
+!
+!                         adams_view_name='MARKER_2291'
+MARKER/2291
+, PART = 195
+, QP = 8.975082E-004, 22.28250767, 8.823721922
+, REULER = 90D, 90D, 190D
+!
+!                           adams_view_name='MForFi_D'
+MARKER/2294
+, PART = 195
+, QP = -0.4791024918, 22.26166989, 8.941898852
+, REULER = 180D, 80D, 180D
+!
+!                         adams_view_name='MARKER_2297'
+MARKER/2297
+, PART = 195
+, QP = -0.4791024918, 22.26166989, 8.941898852
+, REULER = 90D, 90D, 190D
+!
+!                         adams_view_name='MARKER_2333'
+MARKER/2333
+, PART = 195
+, QP = 8.975082E-004, 22.28250767, 8.823721922
+, REULER = 180D, 80D, 180D
+!
+!---------------------------------- CONTACTS -----------------------------------
+!
+!                          adams_view_name='CONTACT_1'
+CONTACT/1
+, IGEOM = 33792
+, JGEOM = 33742
+, IMPACT
+, STIFFNESS = 5.710147154E+005
+, DAMPING = 57.10147155
+, DMAX = 0.0039370079
+, EXPONENT = 2.2
+, COULOMB_FRICTION = ON
+, MU_STATIC = 0.9
+, MU_DYNAMIC = 0.8
+, STICTION_TRANSITION_VELOCITY = 3.937007874
+, FRICTION_TRANSITION_VELOCITY = 39.37007874
+!
+!                          adams_view_name='CONTACT_2'
+CONTACT/2
+, IGEOM = 33795
+, JGEOM = 33742
+, IMPACT
+, STIFFNESS = 5.710147154E+005
+, DAMPING = 57.10147155
+, DMAX = 0.0039370079
+, EXPONENT = 2.2
+, COULOMB_FRICTION = ON
+, MU_STATIC = 0.9
+, MU_DYNAMIC = 0.8
+, STICTION_TRANSITION_VELOCITY = 3.937007874
+, FRICTION_TRANSITION_VELOCITY = 39.37007874
+!
+!                          adams_view_name='CONTACT_3'
+CONTACT/3
+, IGEOM = 33804
+, JGEOM = 33742
+, IMPACT
+, STIFFNESS = 5.710147154E+005
+, DAMPING = 57.10147155
+, DMAX = 0.0039370079
+, EXPONENT = 2.2
+, COULOMB_FRICTION = ON
+, MU_STATIC = 0.9
+, MU_DYNAMIC = 0.8
+, STICTION_TRANSITION_VELOCITY = 3.937007874
+, FRICTION_TRANSITION_VELOCITY = 39.37007874
+!
+!                          adams_view_name='CONTACT_4'
+CONTACT/4
+, IGEOM = 33813
+, JGEOM = 33742
+, IMPACT
+, STIFFNESS = 5.710147154E+005
+, DAMPING = 57.10147155
+, DMAX = 0.0039370079
+, EXPONENT = 2.2
+, COULOMB_FRICTION = ON
+, MU_STATIC = 0.9
+, MU_DYNAMIC = 0.8
+, STICTION_TRANSITION_VELOCITY = 3.937007874
+, FRICTION_TRANSITION_VELOCITY = 39.37007874
+!
+!------------------------------ DYNAMIC GRAPHICS -------------------------------
+!
+!-------------------------------- CONSTRAINTS ----------------------------------
+!
+!                      adams_view_name='RJFrontCWheelFrame'
+JOINT/1
+, REVOLUTE
+, I = 15
+, J = 12
+!
+!                      adams_view_name='RJFrontFrameFlange'
+JOINT/2
+, REVOLUTE
+, I = 13
+, J = 11
+!
+!                        adams_view_name='FJFrontCWheel'
+JOINT/3
+, FIXED
+, I = 17
+, J = 18
+!
+!                      adams_view_name='RJRearCWheelFrame'
+JOINT/4
+, REVOLUTE
+, I = 27
+, J = 23
+!
+!                      adams_view_name='RJRearFrameFlange'
+JOINT/5
+, REVOLUTE
+, I = 24
+, J = 20
+!
+!                         adams_view_name='FJRearCWheel'
+JOINT/6
+, FIXED
+, I = 29
+, J = 30
+!
+!                       adams_view_name='RJWheelBodyRight'
+JOINT/62
+, REVOLUTE
+, I = 1428
+, J = 1429
+!
+!                       adams_view_name='RJWheelBodyLeft'
+JOINT/63
+, REVOLUTE
+, I = 1430
+, J = 1431
+!
+!                         adams_view_name='FJPlayGround'
+JOINT/64
+, FIXED
+, I = 1432
+, J = 1433
+!
+!                        adams_view_name='TJEngineScrew'
+JOINT/74
+, TRANSLATIONAL
+, I = 1233
+, J = 1234
+!
+!                         adams_view_name='RJScissPlatf'
+JOINT/184
+, REVOLUTE
+, I = 2146
+, J = 2147
+!
+!                         adams_view_name='SBMountPlatf'
+JOINT/189
+, TRANSLATIONAL
+, I = 2176
+, J = 2177
+!
+!                       adams_view_name='RJScissAndScrew'
+JOINT/202
+, REVOLUTE
+, I = 2287
+, J = 2288
+!
+!                        adams_view_name='RJScissorsAGV'
+JOINT/212
+, REVOLUTE
+, I = 2328
+, J = 2329
+!
+!                          adams_view_name='SJSciPlat'
+JOINT/213
+, SPHERICAL
+, I = 2331
+, J = 2332
+!
+!                          adams_view_name='SJScissors'
+JOINT/214
+, SPHERICAL
+, I = 2333
+, J = 2334
+!
+!                           adams_view_name='MVelLift'
+MOTION/1
+, TRANSLATIONAL
+, VELOCITY
+, JOINT = 74
+, FUNCTION = VARVAL(192)
+!
+!                           adams_view_name='MRotLeft'
+MOTION/20
+, ROTATIONAL
+, VELOCITY
+, JOINT = 63
+, FUNCTION = -VARVAL(171)
+!
+!                          adams_view_name='MRotRight'
+MOTION/21
+, ROTATIONAL
+, VELOCITY
+, JOINT = 62
+, FUNCTION = VARVAL(170)
+!
+!------------------------------ DATA STRUCTURES --------------------------------
+!
+!                       adams_view_name='MAnchorAngVel_L'
+VARIABLE/168
+, FUNCTION = WX(676, 249)
+!
+!                       adams_view_name='MAnchorAngVel_R'
+VARIABLE/169
+, FUNCTION = WX(675, 249)
+!
+!                          adams_view_name='SEVelRight'
+VARIABLE/170
+, IC = 0
+, FUNCTION = 0
+!
+!                          adams_view_name='SEVelLeft'
+VARIABLE/171
+, IC = 0
+, FUNCTION = 0
+!
+!                        adams_view_name='SESensorRFIDY'
+VARIABLE/172
+, IC = 0
+, FUNCTION = varval(180)
+!
+!                        adams_view_name='SESensorRFIDX'
+VARIABLE/173
+, IC = 0
+, FUNCTION = varval(181)
+!
+!                         adams_view_name='SESensorCRY'
+VARIABLE/174
+, IC = 0
+, FUNCTION = varval(182)
+!
+!                         adams_view_name='SESensorCRX'
+VARIABLE/175
+, IC = 0
+, FUNCTION = varval(183)
+!
+!                         adams_view_name='SESensorCLX'
+VARIABLE/176
+, IC = 0
+, FUNCTION = varval(185)
+!
+!                         adams_view_name='SESensorCLY'
+VARIABLE/177
+, IC = 0
+, FUNCTION = varval(184)
+!
+!                          adams_view_name='SESensorCY'
+VARIABLE/178
+, IC = 0
+, FUNCTION = varval(186)
+!
+!                          adams_view_name='SESensorCX'
+VARIABLE/179
+, IC = 0
+, FUNCTION = varval(187)
+!
+!                         adams_view_name='MSensorRFIDY'
+VARIABLE/180
+, FUNCTION = DY(1436,0,0)
+!
+!                         adams_view_name='MSensorRFIDX'
+VARIABLE/181
+, FUNCTION = DX(1436,0,0)
+!
+!                       adams_view_name='MSensorPointCRY'
+VARIABLE/182
+, FUNCTION = DY(1434,0,0)
+!
+!                       adams_view_name='MSensorPointCRX'
+VARIABLE/183
+, FUNCTION = DX(1434,0,0)
+!
+!                       adams_view_name='MSensorPointCLY'
+VARIABLE/184
+, FUNCTION = DY(1435,0,0)
+!
+!                       adams_view_name='MSensorPointCLX'
+VARIABLE/185
+, FUNCTION = DX(1435,0,0)
+!
+!                        adams_view_name='MSensorPointCY'
+VARIABLE/186
+, FUNCTION = DY(1437,0,0)
+!
+!                        adams_view_name='MSensorPointCX'
+VARIABLE/187
+, FUNCTION = DX(1437,0,0)
+!
+!                      adams_view_name='MDicplacementLift'
+VARIABLE/190
+, FUNCTION = DZ(2324,2325,2325)
+!
+!                         adams_view_name='SESensorLift'
+VARIABLE/191
+, IC = 0
+, FUNCTION = varval(190)
+!
+!                          adams_view_name='SEActuator'
+VARIABLE/192
+, IC = 0
+, FUNCTION = 0
+!
+!                  adams_view_name='AGV_Romb_InWH.ctrl_pinput'
+PINPUT/1
+, VARIABLES = 171, 170
+!
+!               adams_view_name='AGV_smallWHouse_1pcs.ctrl_pinput'
+PINPUT/2
+, VARIABLES = 171, 170
+!
+!              adams_view_name='AGV_smallWHouse_1pcs_3.ctrl_pinput'
+PINPUT/3
+, VARIABLES = 171, 170
+!
+!          adams_view_name='AGV_smallWHouse_1pcs_working_1.ctrl_pinput'
+PINPUT/5
+, VARIABLES = 171, 170, 192
+!
+!                     adams_view_name='Only_AGV.ctrl_pinput'
+PINPUT/6
+, VARIABLES = 171, 170, 192
+!
+!                    adams_view_name='Only_AGV_3.ctrl_pinput'
+PINPUT/7
+, VARIABLES = 171, 170, 192
+!
+!                  adams_view_name='AGV_Romb_InWH.ctrl_poutput'
+POUTPUT/1
+, VARIABLES = 176, 177, 179, 178, 175, 174, 173, 172
+!
+!              adams_view_name='AGV_smallWHouse_1pcs.ctrl_poutput'
+POUTPUT/2
+, VARIABLES = 176, 177, 179, 178, 175, 174, 173, 172
+!
+!             adams_view_name='AGV_smallWHouse_1pcs_3.ctrl_poutput'
+POUTPUT/3
+, VARIABLES = 176, 177, 179, 178, 175, 174, 173, 172
+!
+!         adams_view_name='AGV_smallWHouse_1pcs_working_1.ctrl_poutput'
+POUTPUT/5
+, VARIABLES = 176, 177, 179, 178, 175, 174, 173, 172, 191
+!
+!                    adams_view_name='Only_AGV.ctrl_poutput'
+POUTPUT/6
+, VARIABLES = 176, 177, 179, 178, 175, 174, 173, 172, 191
+!
+!                   adams_view_name='Only_AGV_3.ctrl_poutput'
+POUTPUT/7
+, VARIABLES = 176, 177, 179, 178, 175, 174, 173, 172, 191
+!
+!------------------------- GRAVITATIONAL ACCELERATION --------------------------
+!
+ACCGRAV/
+, KGRAV = -980.665
+!
+!----------------------------- ANALYSIS SETTINGS -------------------------------
+!
+INTEGRATOR/
+, GSTIFF
+, SI2
+!
+EQUILIBRIUM/
+, MAXIT = 1000
+, STABILITY = 0.01
+, TLIMIT = 5
+!
+DEBUG/
+, EPRINT
+!
+OUTPUT/
+, REQSAVE
+, GRSAVE
+!
+RESULTS/
+, XRF
+!
+END
